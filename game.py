@@ -20,3 +20,18 @@ class TicTacToe:
         #        moves.append(i)
         
         return [i for i, spot in enumerate(self.board) if spot == ' ']
+    
+    def empty_squares(self):
+        return ' ' in self.board
+    
+    def num_empty_squares(self):
+        return len(self.available_moves)
+    
+    def play(game, x_player, o_player, print_game=True):
+        if print_game:
+            game.print_board_nums()
+            
+        letter = 'X'
+        
+        while game.empty_squares():
+            pass
