@@ -47,3 +47,11 @@ class TicTacToe:
                 square = o_player.get_move(game)
             else:
                 square = x_player.get_move(game)
+                
+            if game.make_move(square, letter):
+                if print_game:
+                    print(letter + ' makes a move to square {square}.')
+                    game.print_board()
+                    print('')
+                    
+                letter = 'O' if letter == 'X' else 'X'
