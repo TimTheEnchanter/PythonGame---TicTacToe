@@ -84,8 +84,8 @@ class TicTacToe:
                     
                 letter = 'O' if letter == 'X' else 'X'
                 
-            if print_game:
-                print('It\'s a tie!')
+        if print_game:
+            print('It\'s a tie!')
                 
 if __name__ == '__main__':
     x_player = HumanPlayer('X')
